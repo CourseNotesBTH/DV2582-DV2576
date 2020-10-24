@@ -224,14 +224,61 @@ Phishing is the process of attempting to **acquire sensitive information** by **
 * **Backdoor** / trapdoor - used for **remote control**
 * **Logic bomb** - execute a **malicious** behaviour **once certain conditions are met**, such as when a program is ran in the target environment
 
-### Worm
+### Virus phases 
 
-1. **Dormant phase** - on victim's device, **waiting to be activated**
-2. **Propagation phase** - **copies itself** to other disks, emails etc.
-3. **Triggering phase**
+1. **Dormant phase** - on victim's device, **waiting to be activated** (not all viruses has this phases)
+2. **Propagation phase** - **copies itself** onto other programs or into certain system areas on the disk.
+3. **Triggering phase** - It is activated by some event.
 4. **Execution phase** - **payload is executed**
+
+### Worm phases
+
+1. **Dormant phase** - on victim's device, **waiting to be activated** (not all worms has this phases)
+2. **Propagation phase** - Search for **other systems to infect**, through the network, email etc. And tries infects them.
+3. **Triggering phase** - It is activated by some event.
+4. **Execution phase** - **payload is executed**
+
+### Trojan phases
+
+1. **Penetration phase** - Placing itself into the system.
+2. **Activation phase** - The trojan is activated to perform the function for which it was intended.
+3. **Execution phase** - The function is performed
 
 ### Cyber Kill Chain
 
 ![Cyber Kill Chain](https://upload.wikimedia.org/wikipedia/commons/1/1d/Intrusion_Kill_Chain_-_v2.png)
+
+
+
+### Exploit kits (EKs)
+
+Exploit kits are a prepackaged bundles of tools that can be purchased or leased for the purpose of distributing malware. Popular exploit kits are SweetOrange, Angler, Magnitude, and RIG. 
+
+The exploit kit contains all the code to necessary to carry out the following steps:
+
+1. **Establish contact** with the victim through a compromised landing page. And may filterer out victim that meet a certain criteria.
+2. **Redirect** to an alternative landing page and detect vulnerabilities in the host that can be exploited.
+3. Carry out the **exploit** to spread malware.
+4. **Infect** the host environment by executing the malware.
+
+
+
+### RIG infrastructure
+
+![rig-infrastructure](images/rig-infrastructure.png)
+
+
+
+### TeslaCrypt (3)
+
+| Delivery method               | Landed via a drive-by attack with the help of the Angler web exploit |
+| ----------------------------- | ------------------------------------------------------------ |
+| Platform/ File type           | Windows/EXE                                                  |
+| Files encryption method       | AES-256-CBC using the OpenSSL library code                   |
+| Session key encryption method | The key is used as a multiplier in the calculated ECDH shared secret sent to the C&C server and stored in a header of encrypted files |
+| Encryption locations          | Exceptions: Windows, Program Files, and Application Data. Encrypted in shared folders and removable drives |
+| Deleting backup               | Yes, using vssadmin.exe to delete shadow copies of files     |
+| Communication with C&C server | URL varies on the build version, data transmitted in an encrypted way (AES-256-CBC) with the hard-coded key |
+| Decryption service            | in Tor network                                               |
+| Payment                       | $500 equivalent in BTC, doubled every 60 hours               |
 

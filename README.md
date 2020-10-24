@@ -37,8 +37,8 @@ There are some different type of files that you may come across in each course n
 
 | File name | Labels | Description |
 | --------- | :----: | ----------- |
-| Cheat Sheet.md | 📝 🇸🇪 | Everything necessary to pass the class in one paper. Requires Typora or any other Markdown & MathJax compatible editor |
-| Cheat Sheet.pdf | 📝 🇸🇪 | Rendered version of the same file |
+| Cheat Sheet.md | 📝🇬🇧 | Everything necessary to pass the class in one paper. Requires Typora or any other Markdown & MathJax compatible editor |
+| Cheat Sheet.pdf | 📝 🇬🇧 | Rendered version of the same file |
 
 # Purpose of the repository
 <a name="purpose"></a>
