@@ -248,8 +248,6 @@ Phishing is the process of attempting to **acquire sensitive information** by **
 
 ![Cyber Kill Chain](https://upload.wikimedia.org/wikipedia/commons/1/1d/Intrusion_Kill_Chain_-_v2.png)
 
-
-
 ### Exploit kits (EKs)
 
 Exploit kits are a prepackaged bundles of tools that can be purchased or leased for the purpose of distributing malware. Popular exploit kits are SweetOrange, Angler, Magnitude, and RIG. 
@@ -261,8 +259,6 @@ The exploit kit contains all the code to necessary to carry out the following st
 3. Carry out the **exploit** to spread malware.
 4. **Infect** the host environment by executing the malware.
 
-
-
 ### RIG infrastructure
 
 ![rig-infrastructure](images/rig-infrastructure.png)
@@ -271,8 +267,9 @@ The exploit kit contains all the code to necessary to carry out the following st
 
 ### TeslaCrypt (3)
 
-| Delivery method               | Landed via a drive-by attack with the help of the Angler web exploit |
+| Feature                       | Description                                                  |
 | ----------------------------- | ------------------------------------------------------------ |
+| Delivery method               | Landed via a drive-by attack with the help of the Angler web exploit |
 | Platform/ File type           | Windows/EXE                                                  |
 | Files encryption method       | AES-256-CBC using the OpenSSL library code                   |
 | Session key encryption method | The key is used as a multiplier in the calculated ECDH shared secret sent to the C&C server and stored in a header of encrypted files |
